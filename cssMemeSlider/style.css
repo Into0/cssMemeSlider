@@ -65,6 +65,25 @@ input[type=radio] {
   width: 100%;
 }
 
+.text__slider {
+  width: 40%;
+  overflow: hidden;
+}
+
+.text__slides {
+  display: flex;
+  width: 500%;
+  font-size: 1.6rem;
+  color: var(--Silver);
+  text-align: justify;
+  transition: all ease 0.1s;
+  text-transform: uppercase;
+}
+
+.text__item {
+  width: 100%;
+}
+
 .controls {
   display: flex;
   gap: 2rem;
