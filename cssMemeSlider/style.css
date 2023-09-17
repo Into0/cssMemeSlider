@@ -58,3 +58,46 @@ input[type=radio] {
 .slides__item3 { background-image: url(./assets/img/slide3.jpg); }
 .slides__item4 { background-image: url(./assets/img/slide4.jpg); }
 .slides__item5 { background-image: url(./assets/img/slide5.jpg); }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.controls__item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.controls__item:last-child {
+  padding-right: 0;
+}
+
+.controls__item:hover > .radio {
+  background-color: var(--Silver);
+  border: 0.3rem solid var(--Silver);
+}
+
+.controls__item:active > .radio {
+  border: 0.3rem solid var(--Blue-Dark);
+  background-color: transparent;
+}
+
+.radio {
+  background-color: var(--Orange);
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+  border: 0.3rem solid var(--Orange);
+  transition: all ease 0.5s;
+}
