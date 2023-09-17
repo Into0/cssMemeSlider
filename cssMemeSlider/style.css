@@ -120,3 +120,23 @@ input[type=radio] {
   border: 0.3rem solid var(--Orange);
   transition: all ease 0.5s;
 }
+
+#slide1:checked ~ .slider > .slides { transform: translateX(0); }
+#slide2:checked ~ .slider > .slides { transform: translateX(-20%); }
+#slide3:checked ~ .slider > .slides { transform: translateX(-40%); }
+#slide4:checked ~ .slider > .slides { transform: translateX(-60%); }
+#slide5:checked ~ .slider > .slides { transform: translateX(-80%); }
+
+#slide1:checked ~ .container .text__slider > .text__slides { transform: translateX(0); }
+#slide2:checked ~ .container .text__slider > .text__slides { transform: translateX(-20%); }
+#slide3:checked ~ .container .text__slider > .text__slides { transform: translateX(-40%); }
+#slide4:checked ~ .container .text__slider > .text__slides { transform: translateX(-60%); }
+#slide5:checked ~ .container .text__slider > .text__slides { transform: translateX(-80%); }
+
+#slide1:checked ~ .container > .controls > label > .radio1,
+#slide2:checked ~ .container > .controls > label > .radio2,
+#slide3:checked ~ .container > .controls > label > .radio3,
+#slide4:checked ~ .container > .controls > label > .radio4,
+#slide5:checked ~ .container > .controls > label > .radio5 {
+  background-color: transparent;
+}
